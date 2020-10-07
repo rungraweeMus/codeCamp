@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background-color: palegreen;">
+        <h1>1.CSS Syntax ประกอบด้วย </h1>
+        <p style="border: solid 0.9px; ">Selector, Declaration, Property และ Value</p>
+        <h2><strong>ตัวอย่าง:</strong> <mark style="background-color: darkkhaki;">h1</mark> { <mark
+                style="background-color: coral;">colour</mark>: <mark style="background-color: cyan;"> red</mark>, <mark
+                style="background-color: coral;">font-size</mark>: <mark style="background-color: cyan;"> 10px</mark>; }
+        </h2>
+        <ul>
+            <ui>
+                <p><strong>Selector: </strong> <mark style="background-color: darkkhaki;">h1</mark></p>
+            </ui>
+            <ui>
+                <p><strong>Declaration: </strong> {<mark style="background-color: coral;">colour</mark>: <mark
+                        style="background-color: cyan;"> red</mark>, <mark
+                        style="background-color: coral;">font-size</mark>: <mark style="background-color: cyan;">
+                        10px</mark>; }</p>
+            </ui>
+            <ui>
+                <p><strong>Property: </strong><mark style="background-color: coral;">colour</mark>, <mark
+                        style="background-color: coral;">font-size</mark></p>
+            </ui>
+            <ui>
+                <p><strong>Value: </strong><mark style="background-color: cyan;"> red</mark>, <mark
+                        style="background-color: cyan;"> 10px</mark></p>
+            </ui>
+        </ul>
+        <h2><strong>คำอธิบายการใช้งาน</strong></h2>
+        <diV style="border: solid; background-color: khaki;">h2 {
+            font-size: 10px;
+            text-align: right;
+            background-color: red;
+            }</diV>
+        <p>CSS Syntax ข้างต้นได้ระบุ selector เป็น tag h2 อธิบาย Declaration อยู่ภายในเครื่องหมาย {...}
+            ซึ่งประกอบไปด้วย Property 3 ตัว คือ font-size คือการกำหนดขนาดตัวอักษร และได้ระบุค่า value เป็น 10px
+            และ Property คือ text-align สำหรับจัดตำแหน่งของข้อความ ซึ่งได้ระบุค่า value เป็น right คือชิดขวา
+            และ Property คือ background-color ใช้ระบุสีของพื้นหลัง ซึ่งได้ระบุค่า value เป็น red</p><br>
+    </div>
+    <hr>
+    <div style="background-color: papayawhip;">
+        <br>
+        <h1>2.การเขียน CSS มีกี่แบบ อะไรบ้าง</h1>
+        <h3>การเขียน CSS แบ่งออกเป็นการเขียน ได้ 3 ประเภท คือ inline, Internal และ External</h3>
+        <h2>2.1 การเขียนแบบ inline</h2>
+        <p>คือการเขียนแทรกเข้าไปใน tag html ของแต่ละ element นั้นๆ โดยจะระบุค่า Property เป็น style และจะมีการกำหนด
+            Property และ value ของ css ใน Property ของ style อีกที</p>
+        <h4 style="display: inline; color:navy">ตัวอย่าง</h4>
+        &lt;p style="color: red;
+        font-weight: bold;
+        text-align: center;"&gt;<span style="color: red; font-weight: bold;">ตัวหนังสือหนาสีแดง</span>&lt;/p&gt;
+        <br>
+        <h2>2.2 การเขียนแบบ Internal</h2>
+        <p>คือเขียนแยก CSS ออกจาก tag element แต่อยู่ในส่วน tag head ของ file html หน้าเดียวกัน</p>
+        <h4 style=" color:navy">ตัวอย่าง</h4>
+        <div style="color: olive;">
+            &lt;html&gt;<br>
+            <span style="color: tomato;">//start tag head</span><br>
+            &lt;head&gt;<br>
+            &lt;style type="text/css"&gt;<br>
+            h1 {<br>
+            color:peachpuff;<br>
+            font-weight: 0.9em;<br>
+            background-color: red;<br>
+            padding: 5px;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt; <br>
+            <span style="color: tomato;">//end tag head</span><br><br>
+            &lt;body&gt;<br><br>
+            &lt;h1><span style="color:peachpuff; font-weight: 0.9em; background-color: red; padding: 5px;">Hello
+                World..</span>&lt;/h1&gt;<br><br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+        </div>
+        <br>
+        <h2>2.3 การเขียนแบบ External</h2>
+        <p>คือการแยกไฟล์ .css ออกมาจากไฟล์ .html เพื่อให้ง่ายต่อการจัดการ code และสามารถ reuse code ใช้ในไฟล์อื่นๆ ได้
+        </p>
+        <h4 style=" color:navy">ตัวอย่าง</h4>
+
+        <div style="color:purple; ">
+            <div><strong>//ไฟล์ style.css</strong></div><br>
+            h1 {<br>
+            color:peachpuff;<br>
+            font-weight: 0.9em;<br>
+            background-color: red;<br>
+            padding: 5px;<br>
+            }<br><br>
+        </div>
+
+        <div style="color: orangered">
+            <div><strong>//ไฟล์ index.html</strong></div><br>
+            &lt;html&gt;<br>
+            <span style="color:navy;">//start tag head</span><br>
+            &lt;head&gt;<br>
+            &lt;link rel="stylesheet" href="style.css" &gt;<br>
+            &lt;/head&gt; <br>
+            <span style="color: navy;">//end tag head</span><br><br>
+            &lt;body&gt;<br><br>
+            &lt;h1><span style="color:peachpuff; font-weight: 0.9em; background-color: red; padding: 5px;">Hello
+                World..</span>&lt;/h1&gt;<br><br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <div style="background-color: skyblue;">
+        <br>
+        <h1>3.CSS Selector มีกี่แบบ อะไรบ้าง</h1>
+        <table style="border: solid;">
+            <thead>
+                <tr style="border: solid;">
+                    <th style="border: solid;">CSS Selector</th>
+                    <th style="border: solid;">Declaration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: solid;">Simple selectors </td>
+                    <td style="border: solid;">เลือกเอลิเมนต์ด้วยการกำหนดชื่อ element, class หรือ id<br><br>
+                        div {<br>
+
+                        font-size: 10px;<br>
+
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">Combinator Selectors </td>
+                    <td style="border: solid;">เลือกเอลิเมนต์ด้วยการกำหนดลำดับความสัมพันธ์ tag เช่น div h1{} จะหมายถึง
+                        เลือกเอลิเมนต์ h1 ที่ซ้อนอยู่ภายในเอลิเมนต์ div <br><br>
+                        div h1 {<br>
+
+                        color: white;<br>
+
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">Pseudo-class selectors </td>
+                    <td style="border: solid;">เลือกเอลิเมนต์ตามสถานะ เช่น a:hover หมายถึง เอลิเมนต์ a ที่มีสถานะ
+                        hover<br><br>
+                        a:hover {<br>
+                        background-color: turquoise; <br>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">Pseudo-elements selectors </td>
+                    <td style="border: solid;">เลือกกำหนดสไตล์ให้บางส่วนของเอลิเมนต์ เช่น h1::before หมายถึง
+                        เลือกกำหนดสไตล์ให้ tag h1 คือ background-color: red ก่อน <br>หลังจากนั้น จะทำคำสั่งใน h1 {...}
+                        คือ background-color: black <br>
+                        <br>h1 {<br>
+                        background-color: black;<br>
+                        }<br><br>
+                        h1::before {<br>
+
+                        background-color: red;<br>
+
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">Attribute selectors </td>
+                    <td style="border: solid;">เลือกเอลิเมนต์ที่มีแอททริบิวต์ตามที่กำหนด เช่น link[target=”student”]
+                        หมายถึง เลือกเอลิเมนต์ link ที่แอททริบิวต์ tartget มีค่าเป็น student<br>
+                        <br>link[target=student] {<br>
+                        font-size: 10px;<br>
+                        }
+                    </td>
+                </tr>
+        </table>
+    </div>
+    <hr>
+    <div style="background-color:tan;">
+        <br>
+        <h1>4.CSS Combinator มี 4 แบบ ดังนี้ </h1>
+        <table>
+            <thead>
+                <tr style="border: solid;">
+                    <th style="border: solid;">CSS Combinator</th>
+                    <th style="border: solid;">Declaration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: solid;">space</td>
+                    <td style="border: solid;">คือ การสั่งการทำงานทั้งหมดของ tag element ทุกตัวไม่ว่าจะเป็น "ลูก หลาน
+                        เหลน โหลน" ของ tag ที่อยู่ด้านขวาสุด <br>ซึ่งอยู่ภายใต้ element ก่อนหน้า โดยการเขียนนั้น ใช้
+                        "ช่องว่าง" ในการสั่งงาน เช่น table tbody tr {...} หมายถึง tr ทั้งหมดที่มีอยู่ใน tbody ซึ่ง tbody
+                        อยู่ใน table อีกที</td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">&gt;</td>
+                    <td style="border: solid;">คือ การสั่งงานเฉพาะ "ลูก" เท่านั้น ไม่นับรวมหลาน หรือเหลน โหลน
+                        การเขียนนั้น ใช้ "เครื่องหมายมากกว่า (>)" <br>เช่น div>p {... } คือ ให้กระทำการใดๆ กับ p ที่เป็น
+                        ลูกของ div เท่านั้น ถ้ามี p ซ้อนอยู่ใน p อีกที จะไม่ถูกสั่งการ</td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">+</td>
+                    <td style="border: solid;">คือ การสั่งงาน tag ที่อยู่ถัดจาก tag ตัวแรกเพียง tag เดียวเท่านั้น
+                        และต้องอยู่ในระดับชั้น element เท่ากัน <br>การเขียนนั้น ใช้ "เครื่องหมายบวก (+)" เช่น div+div
+                        {...} คือ ให้กระทำการใดๆ กับ div ที่อยู่ต่อจาก div ที่ระดับ element เดียวกัน </td>
+                </tr>
+                <tr>
+                    <td style="border: solid;">~</td>
+                    <td style="border: solid;">คือ การสั่งงาน tag ที่อยู่ถัดจาก tag ตัวแรกทุกตัว และต้องอยู่ในระดับชั้น
+                        element เท่ากัน <br>การเขียนนั้น ใช้ "เครื่องหมายตัวหนอน (~)" เช่น h1+p {...} คือ ให้กระทำการใดๆ
+                        กับ p ที่อยู่หลัง h1 ไม่ว่าจะอยู่ในลำดับที่เท่าไร แต่ p ต้องอยู่ในระดับชั้นเดียวกัน</td>
+                </tr>
+                <br>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div style="background-color: yellow;">
+        <h1>5. CSS Property และ CSS Value </h1>
+        <h3>CSS Property</h3>
+        <p>คือ ชื่อคุณสมบัติที่ต้องการใช้งานตามวัตถุประสงค์ เช่น color ต้องการกำหนดสี , font-size
+            ต้องการกำหนดขนาดตัวอักษร</p>
+        <br>
+        <h3>CSS Value</h3>
+        <p>คือ การกำหนดค่าให้กับ Property เช่น color: red //value=red <br>และ font-size: 10px //value=10px </p>
+        <br>
+        <h3>ความแตกต่าง</h3>
+        <p>CSS Property ใช้กำหนดคุณสมบัติตามวัตถุประสงค์การใช้งาน(key) ส่วน CSS Value ใช้กำหนดค่า(value)ใน property</p>
+        <br><br>
+    </div>
+    <hr>
+    <div style="background-color: plum;">
+        <h1>6.Property มีกี่กลุ่ม มีอะไรบ้าง</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Group Property </th>
+                    <th>Declaration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>content</td>
+                    <td>color, font-size, text-align, font-family</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>border-width, border-style, border-color, border-bottom, border-top, border-right</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>padding-top, padding-right, padding-left, padding-bottom</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>margin-top, margin-right, margin-left, margin-bottom</td>
+                </tr>
+                <tr>
+                    <td>element</td>
+                    <td>display, active, width, position, align, flex, grid
+                    </td>
+                    <br>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div style="background-color:yellowgreen;">
+        <h1>7. Value unit </h1>
+        <table>
+            <thead style="border: solid 1px;">
+                <tr style="border: solid 1px;">
+                    <th style="border: solid 1px;">value unit</th>
+                    <th style="border: solid 1px;">Exsample</th>
+                </tr>
+            </thead>
+            <tbody style="border: solid 1px;">
+                <tr style="border: solid 1px;">
+                    <td style="border: solid 1px;">Absolute Lengths<br>
+                        หน่วยที่กำหนดค่าที่ fix ตามที่ได้กำหนดไว้</td>
+                    <td style="border: solid 1px;"> in, px, pt,mm, cm</td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px;">Relative Lengths<br>
+                        หน่วยที่กำหนดค่าโดยอ้างอิงอัตราส่วนเทียบเคียง</td>
+                    <td style="border: solid 1px;">em, ex, ch, rem, vw, vh, vmin, vmax, %
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+    <hr>
+    <div style="background-color: peru;;">
+        <h1>8. Value ใน Property display</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th style="border: solid 1px;">value of Property display</th>
+                    <th style="border: solid 1px;">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: solid 1px;">inline</td>
+                    <td style="border: solid 1px;"><br>&lt;h3&gt;Hello World..&lt;/h3&gt; <br>
+                        &lt;h4&gt;Rungrawee&lt;/h4&gt; <br><br>
+                        //แต่เมื่อเราใส่คำสั่ง CSS นี้เข้าไป <br>
+                        h3, h4 { <br>
+                        display: inline; <br>
+                        }<br><br>
+                        //ผลลัพธ์ <br>
+                        <h3 style="display: inline;">Hello World..</h3>
+                        <h4 style="display: inline;">Rungrawee</h4><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px;">none</td>
+                    <td style="border: solid 1px;"><br>&lt;div&gt;Say Hi.. &lt;p&gt;Rungrawee&lt;/p&gt;&lt;/div&gt; <br>
+                        <br>
+                        //แต่เมื่อเราใส่คำสั่ง CSS นี้เข้าไป <br>
+                        p { <br>
+                        display: none; <br>
+                        }<br><br>
+                        //ผลลัพธ์ <br>
+                        <div>Say Hi..<p style="display: none;">Rungrawee</p></div>
+                        <br>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px;">block</td>
+                    <td style="border: solid 1px;"><br>&lt;span&gt;Hello World..&lt;/span&gt; <br>
+                        &lt;span&gt;Rungrawee&lt;/span&gt; <br>
+                        //แต่เมื่อเราใส่คำสั่ง CSS นี้เข้าไป <br>
+                        span { <br>
+                        display: block; <br>
+                        }<br><br>
+                        //ผลลัพธ์ <br>
+                        <span style="display: block;">Hello World..</sapn><span style="display: block;">Rungrawee</span>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px;">inline-block</td>
+                    <td style="border: solid 1px;"><br>
+                        &lt;div&gt;
+                            This is &lt;p&gt;rungrawee&lt;/p&gt;My 27 yesrs old.&lt;/div&gt; <br><br>
+                            //แต่เมื่อเราใส่คำสั่ง CSS นี้เข้าไป <br>
+                            p{ <br>
+                                display: inline-block; <br>
+                            }
+                        <div><br><br>
+                            //ผลลัพธ์ <br>
+                            This is <p style="display: inline-block;">rungrawee</p> My 27 yesrs old. 
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

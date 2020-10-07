@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form 2</title>
+    <style>
+        li {
+            margin: 10px;
+            list-style: none;
+        }
+
+        button {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buyer Information</h1>
+    <form id="payment">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <ul>
+                <li>
+                    <label for='name'>Name</label>
+                    <input id='name' name='name' type='text' placeholder='First Name and Last Name' required autofocus>
+                </li>
+                <li>
+                    <label for='email'>Email</label>
+                    <input id='email' name='email' type='email' placeholder='xxx@xxxx.com' required>
+                </li>
+                <li>
+                    <label for='mobile'>Mobile</label>
+                    <input id='mobile' name='mobile' type='tel' placeholder='Ex. 081XXX0085' required>
+                </li>
+                <li>
+                    <label for='address'>Delivery Address</label><br>
+                    <textarea id='address' name='address' rows='5' cols="40" required></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment details</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Payment type</legend>
+                        <ol>
+                            <li>
+                                <input id='bank' name='banktype' type='radio'>
+                                <label for='bank'>Banking</label>
+                            </li>
+                            <li>
+                                <input id='cod' name='codtype' type='radio'>
+                                <label for='cod'>COD</label>
+                            </li>
+                            <li>
+                                <input id='card' name='cardtype' type='radio'>
+                                <label for='card'>Mastercard or Visa</label>
+                            </li>
+                        </ol>
+                    </fieldset>
+
+                </li>
+                <li>
+                    <label for='monney'>Money</label>
+                    <input id='money' name='money' type='number' required>
+                </li>
+                <li>
+                    <label for='date'>Date</label>
+                    <input id='date' name='date' type='date' required>
+                </li>
+                <li>
+                    <label for='time'>Time</label>
+                    <input id='time' name='time' type='time' required>
+                </li>
+        </fieldset>
+        <br>
+        <button type='submit'>Send</button><br><br>
+    </form>
+</body>
+
+</html>

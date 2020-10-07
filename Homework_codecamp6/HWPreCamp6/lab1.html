@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabHtml</title>
+</head>
+
+<body>
+    <p><strong>Name:</strong> rungrawee musignawabut</p>
+    <p><strong>Email:</strong>Email: rmusignawabut@gmail.com</p>
+    <h1>Lab HTML</h1>
+    <table style="border: solid;">
+        <h2>Attribute</h2>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Attribute</th>
+                <th>How does it use for</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tag h</td>
+                <td>id ,class ,style</td>
+                <td>tag ที่ใช้กำหนดส่วนหัวตามขนาดตัวอักษร h1-h6</td>
+            </tr>
+            <tr>
+                <td>tag p</td>
+                <td>id ,class ,style</td>
+                <td>tag กำหนดข้อความใน paragraph</td>
+            </tr>
+            <tr>
+                <td>tag div</td>
+                <td>id ,class ,style</td>
+                <td>tag ที่ใช้จัดการหลายๆ element ให้อยู่ภายใต้ element เดียวกันได้</td>
+            </tr>
+            <tr>
+                <td>tag img</td>
+                <td>src, alt, width, height, align, id, class, style</td>
+                <td>tag กำหนดภาพตามที่ได้ระบุแหล่งไฟล์ภาพ และคุณสมบัติของภาพใน attribute</td>
+            </tr>
+            <tr>
+                <td>tag a</td>
+                <td>id ,class ,style ,href ,target</td>
+                <td>tag ใช้สำหรับ link ไปยังจุดที่ต้องการ ซึ่งปลายทางอาจเป็น url หรือ html file หรือไฟล์รูปภาพ</td>
+            </tr>
+            <tr>
+                <td>tag ul</td>
+                <td>id ,class ,style</td>
+                <td>tag กำหนดรายการ (รายการย่อยแสดงเป็นสัญลักษณ์)</td>
+            </tr>
+            <tr>
+                <td>tag ol</td>
+                <td>id ,class ,style</td>
+                <td>tag กำหนดรายการ (รายการย่อยแสดงเป็นลำดับ หรือตัวเลข)</td>
+            </tr>
+            <tr>
+                <td>tag table</td>
+                <td> align,border, bordercolor, width bgcolor, cellspacing, cellpadding</td>
+                <td>tag ใช้สำหรับสร้างตารางที่มีการกำหนด row, column, data, border etc. ตามการใช้งานที่ต้องการ</td>
+            </tr>
+            <tr>
+                <td>tag form</td>
+                <td> name, method, action, target</td>
+                <td>tag ที่ใช้ในการสร้าง form ตามรูปแบบที่เหมาะสม เพื่อรองรับ input จากผู้ใช้งาน</td>
+            </tr>
+            <tr>
+                <td>tag button</td>
+                <td>id ,class ,style ,disabled ,name ,type ,value</td>
+                <td>tag ที่ใช้สำหรับกำหนดปุ่มให้ผู้ใช้งานสามารถ click และตอบสนองข้อมูลบางอย่างปรากฎไปยังผู้ click ได้
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+
+    <table style="border: solid;">
+        <h2>Different to 2 Tags</h2>
+        <thead>
+            <tr>
+                <th>Tags</th>
+                <th>Similarity</th>
+                <th>Differentiation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;hr&gt; & &lt;br&gt;</td>
+                <td>ขึ้นบรรทัดใหม่</td>
+                <td>hr มีเส้นคั่นกลางก่อนขึ้นบรรทัดใหม่<br>
+                    br ขึ้นบรรทัดใหม่โดยไม่มีเส้นคั่นกลาง</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt; & &lt;ol&gt;</td>
+                <td>tag ใช้กำหนดรายการย่อย</td>
+                <td>ul กำหนดรายการย่อยแบบประเภทเดียวกัน<br>
+                    ol กำหหนดรายการย่อยแบบมีลำดับ หรือตัวเลข</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt; & &lt;checkbox&gt; <br>& &lt;radio button&gt;</td>
+                <td>เป็นตัวเลือกที่ใช้ใน form</td>
+                <td>select มี list ให้เลือกได้หลายๆ list แต่เลือกได้แค่ 1 choice<br>
+                    checkbox เลือกได้มากว่า 1 choice<br>
+                    ratio มี list จำกัดและเลือกได้แค่ 1 choice
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt; & &lt;span&gt;</td>
+                <td>สามารถจัดการ element ให้อยู่ภายใต้ element เดียวกัน</td>
+                <td>div: หากมีหลาย tag div ติดกันจะขึ้นบรรทัดใหม่<br>
+                    span: หากมีหลาย tag span ติดกันจะไม่ขึ้นบรรทัดใหม่ให้
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;script&gt; & &lt;style&gt;</td>
+                <td>tag ที่ใช้กำหนดชุดคำสั่ง</td>
+                <td>script: tag ถูกใช้เพื่อกำหนดชุดคำสั่ง JavaScript
+                    <br>style: tag ใช้ในการกำหนดชุดคำสั่ง CSS</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+
+    <table style="border: solid;">
+        <h2>Input Type</h2>
+        <thead>
+            <tr>
+                <th>Input type</th>
+                <th>usability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>text</td>
+                <td>รับข้อความ input ทั่วไปที่เป็น string</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td>ปุ่มกด list ได้หลาย choice</td>
+            </tr>
+            <tr>
+                <td>botton</td>
+                <td>ปุ่มกดเพื่อตอบสนองต่อ event บางอย่าง</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>เป็นรูปแบบการเลือกหรือใส่ข้อมูลเป็น วัน เดือน ปี</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>ปุ่มที่รับ input ที่เป็น email</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>ปุ่มรับ input ประเภท password ซึ่งจะซ่อนโดยใช้จุด(.)ไว้</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>ปุ่มรับ input เป็น source ของไฟล์</td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td>ปุ่มรับ input ที่เป็นตัวเลขเท่านั้น</td>
+            </tr>
+            <tr>
+                <td>ratio</td>
+                <td>ปุ่ม list ที่เลือกได้แค่ 1 choice</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>ช่องรับ input ประเภท link url ของ website</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>ปุ่มกดเพื่อส่งข้อมูลที่กรอกหน้าฟอร์มไปทำอะไรบางอย่าง และ/หรือ ตอบสนองเหตุการณ์บางอย่าง เมื่อผู้ใช้
+                    click</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>เป็นรูปแบบการเลือกสี</td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td>ช่องรับข้อมูลประเภทเดือน</td>
+            </tr>
+            <tr>
+                <td>tel</td>
+                <td>ช่องรับ input ข้อมูลเบอร์โทรศัพท์</td>
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td>เป็นปุ่มสำหรับ reset ข้อมูลในหน้าฟอร์ม</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>เป็นช่องรับ input ประเภทเวลา</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+
+    <table style="border: solid;">
+        <h2>Others Tag</h2>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Result</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;strong&gt; &lt;/strong&gt;</td>
+                <td><strong>Output of tag strong</strong></td>
+                <td>อักษรตัวหนา</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt; &lt;/label&gt; </td>
+                <td><label>Output of tag label</label></td>
+                <td>เป็น tag ชนิดหนึ่ง ถูกใช้ภายใน element form ใช้เพื่อต้องการกำหนดเพื่อเชื่อมโยงกันถึงกัน ในแต่ละ tag</td>
+            </tr>
+            <tr>
+                <td>&lt;del&gt; &lt;/del&gt;</td>
+                <td><del>Output of tag del</del></td>
+                <td>อักษรถูกขีดฆ่า</td>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;  &lt;/b&gt; </td>
+                <td><b>Output of tag b</b></td>
+                <td>อักษรตัวหนา</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt; &lt;/em&gt;</td>
+                <td><em>Output of tag em</em></td>
+                <td>อักษรตัวเอียง</td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt; &lt;/mark&gt; </td>
+                <td><mark>Output of tag mark</mark></td>
+                <td>อักษรถูกไฮไลต์</td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt; &lt;/i&gt;</td>
+                <td><i>Output of tag i</i></td>
+                <td>อักษรตัวเอียง</td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt; &lt;/sub&gt; </td>
+                <td><sub>Output of tag sub</sub></td>
+                <td>ตัวอักษรตัวเล็กลง และถูกยกบรรทัดลงเล็กน้อย</td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt; &lt;/sup&gt;</td>
+                <td><sup>Output of tag sup</sup></td>
+                <td>ตัวอักษรตัวเล็กลง และถูกยกบรรทัดขึ้นเล็กน้อย</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    
+</body>
+
+</html>

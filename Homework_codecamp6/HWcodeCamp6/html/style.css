@@ -1,0 +1,91 @@
+img {
+    width: 400px;
+    height: 300px;
+    margin-left: 15%;
+    border-style: double;
+}
+
+#prof {
+    border-style: dotted;
+    border-radius: 8em;
+    margin-left: 33%;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 2px blueviolet;
+    background-color: burlywood;
+}
+h2 {
+    margin-left: 35%;
+    color: chocolate;
+}
+
+#hob {
+    color: crimson;
+    margin-left: 8%;
+    font-size: 35px;
+}
+
+body {
+    font-family: 'Chelsea Market', cursive;
+    background-image: url(https://images.unsplash.com/photo-1532512002429-4f0153911191?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);
+    background-repeat: repeat;
+}
+
+.friend{
+    background-image: url(https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-repeat: repeat;
+}
+
+p {
+    margin-left: 8%;
+    text-indent: 50px;
+}
+
+b{
+    font-size: 30px;
+    color: deeppink;
+}
+
+a{
+    font-size: large;
+    font-weight: 500;
+    color: darkred;
+}
+
+#link {
+    margin-left: 40%;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    background-color: grey;
+}
+
+.container h2,p,a{
+    text-align: left;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container h2{
+    font-size: 30px;
+    color: darkslategray;
+    margin-left: 5%;
+}
+
+.container p{
+    font-size: 20px;
+    color: dimgrey;
+    margin-left: 8%;
+}
+
+.container a{
+    font-size: 18px;
+    color: darkcyan;
+    margin-left: 5%;
+}
+
+

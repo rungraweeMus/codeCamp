@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        img{
+            margin-top:20px;
+            width: 410px;
+            height: 250px;
+        }
+        div {
+            text-align: center;
+        }
+        div > div {
+            padding: 4%;
+            border: solid slategray 2px;
+            color: teal;
+        }
+        div > h3 {
+            font-weight: 700;
+        }
+        .container{
+            display: grid;
+            grid-gap: 12px;
+            margin: 40px auto;
+        }
+
+        footer{
+            text-align: center;
+            margin-bottom: 50px;
+            border: solid slategray 2px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 1% 1%;
+        }
+
+        @media only screen and (max-width: 560px){
+            .container{
+                grid-template-columns: auto;
+            }
+
+            div > div {
+                min-width: 300px;
+            }
+
+            footer {
+                min-width: 300px;
+            }
+        }
+
+        @media only screen and (min-width: 561px) and (max-width:840px){
+            .container{
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 4%;
+                margin-bottom: 15%;
+            }
+
+            div > div {
+                min-width: 300px;
+            }
+        }
+
+        @media only screen and (min-width: 841px) {
+            .container{
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 3%;
+            }
+
+            div > div {
+                min-width: 250px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="src/BCCnew.png"></div>
+    <div class="container">
+        <div>
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti, velit aut accusamus adipisci aliquam odit asperiores, consectetur cum ratione, deserunt ut saepe maxime? Harum amet rem maxime nemo aperiam.</p>
+        </div>
+        <div>
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde necessitatibus accusamus magnam numquam impedit, possimus, porro laudantium vero aliquid ipsum. Sit perspiciatis quidem aliquam recusandae nisi, voluptate ab quia!</p>
+        </div>
+        <div>
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde necessitatibus accusamus magnam numquam impedit, possimus, porro laudantium vero aliquid ipsum. Sit perspiciatis quidem aliquam recusandae nisi, voluptate ab quia!</p>
+        </div>
+        <div>
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde necessitatibus accusamus magnam numquam impedit, possimus, porro laudantium vero aliquid ipsum. Sit perspiciatis quidem aliquam recusandae nisi, voluptate ab quia!</p>
+        </div>
+        <div>
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde necessitatibus accusamus magnam numquam impedit, possimus, porro laudantium vero aliquid ipsum. Sit perspiciatis quidem aliquam recusandae nisi, voluptate ab quia!</p>
+        </div>
+        <div>
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde necessitatibus accusamus magnam numquam impedit, possimus, porro laudantium vero aliquid ipsum. Sit perspiciatis quidem aliquam recusandae nisi, voluptate ab quia!</p>
+        </div>
+    </div>
+    <footer>
+        <h2>title</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nisi doloremque delectus eveniet quod! Consequuntur incidunt inventore eveniet aliquid obcaecati, porro, et fugiat nam autem nulla quasi repellat nostrum reprehenderit.Saepe, modi! Nulla corporis asperiores vero quibusdam numquam quis eos sequi animi, officia optio consectetur laboriosam harum, molestias consequuntur perspiciatis. Sunt unde esse nam natus officiis quas eius? Libero, aperiam.</p>
+    </footer>
+</body>
+
+</html>

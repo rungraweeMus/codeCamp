@@ -1,0 +1,55 @@
+@media only screen and (min-width: 800px) {
+    #img {
+        width: 70%
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #img {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #img {
+        width: 25%;
+    }
+}
+
+#main {
+    background-color: rgba(128, 128, 128, 0.404);
+    font-family: 'Roboto Slab', serif;
+}
+
+#title {
+    text-align: center;
+}
+
+#img-div {
+    text-align: center;
+    margin: 20px;
+}
+
+#img {
+    border: solid grey;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+
+#img-caption {
+    text-align: center;
+}
+
+#tribute-info {
+    margin: 20px;
+}
+
+#link-refer {
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 20px 50px 20px;
+}
+
+

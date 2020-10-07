@@ -1,0 +1,108 @@
+.nav ul {
+    list-style: none;
+    background-color:darkseagreen;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    transition: cubic-bezier(1, 0, 0, 1);
+    border-bottom: 1px;
+    color: floralwhite; 
+    padding-left: 30px;
+
+}
+
+.nav a:hover {
+    background-color: turquoise;
+}
+
+.nav a.active {
+    background-color:steelblue;
+    color:white;
+}
+
+.nav ul ul li  {
+    font-size: 1.0em ;
+}
+
+.nav a > ul > li {
+    text-align: center;
+}
+
+.nav li ul {
+    position: absolute;
+    display: none;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+}
+
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 150px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        margin-right: -4px;
+        display: inline-block; 
+    }
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color:navy;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 3s;
+}
+
+.pagination a:hover {
+    background-color:lawngreen;
+}
+
+.pagination a.active {
+    background-color:lightseagreen;
+}
+
+.tooltip a {
+    position: relative;
+    display: block;
+    border-bottom: 1px;
+}
+
+.tooltip .tooltiptext {
+    font-size: 1.0em;
+    visibility: hidden;
+    width: 120px;
+    background-color:  darkgoldenrod;
+    color: aqua;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-size: 1.0em;
+}
+
