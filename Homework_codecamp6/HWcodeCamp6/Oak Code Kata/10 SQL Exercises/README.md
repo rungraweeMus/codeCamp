@@ -1222,7 +1222,8 @@ ___
 
 ___
 
-<pre style="max-height: 100px;">
+<pre style="max-height: 80px; 
+overflow-y: auto;  background-color: #FFFFCC;" >
 <code> salesman_id |    name    |   city   | commission 
 -------------+------------+----------+------------
         5001 | James Hoog | New York |       0.15
@@ -1232,4 +1233,6 @@ ___
         5007 | Paul Adam  | Rome     |       0.13
         5003 | Lauson Hen | San Jose |       0.12</code>
 </pre>
+
+
 
