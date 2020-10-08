@@ -1222,17 +1222,32 @@ ___
 
 ___
 
-<pre style="max-height: 80px; 
-overflow-y: auto;  background-color: #FFFFCC;" >
-<code> salesman_id |    name    |   city   | commission 
--------------+------------+----------+------------
-        5001 | James Hoog | New York |       0.15
-        5002 | Nail Knite | Paris    |       0.13
-        5005 | Pit Alex   | London   |       0.11
-        5006 | Mc Lyon    | Paris    |       0.14
-        5007 | Paul Adam  | Rome     |       0.13
-        5003 | Lauson Hen | San Jose |       0.12</code>
-</pre>
+```{css, echo=FALSE}
+.scroll-100 {
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: inherit;
+}
+```
+
+```{r, class.output="scroll-100"}
+xfsg
+sdge
+degdsge
+etgdef
+cfgu
+dfyhhry
+dhfry
+seter4t
+dhryr
+dtg
+set4e6
+srf
+sfedtg
+```
+
+
+
 
 
 
