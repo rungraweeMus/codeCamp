@@ -1222,29 +1222,18 @@ ___
 
 ___
 
-```{css, echo=FALSE}
-.scroll-100 {
-  max-height: 100px;
-  overflow-y: auto;
-  background-color: inherit;
-}
-```
 
-```{r, class.output="scroll-100"}
-xfsg
-sdge
-degdsge
-etgdef
-cfgu
-dfyhhry
-dhfry
-seter4t
-dhryr
-dtg
-set4e6
-srf
-sfedtg
-```
+
+<pre style="max-height: 100px; overflow-y: auto;">
+<code>##   [1]   1   2   3   4   5   6   7   8   9  10
+##  [11]  11  12  13  14  15  16  17  18  19  20
+##  [11]  11  12  13  14  15  16  17  18  19  20
+##  [11]  11  12  13  14  15  16  17  18  19  20
+##  [11]  11  12  13  14  15  16  17  18  19  20
+##  [11]  11  12  13  14  15  16  17  18  19  20
+##  [11]  11  12  13  14  15  16  17  18  19  20
+## [11]  11  12  13  14  15  16  17  18  19  20</code>
+</pre>
 
 
 
