@@ -51,7 +51,7 @@ ___
         ON a.salesman_id = b.salesman_id;  
 
     |Customer Name	|city	    |Salesman	|commission|
-    |---|---|---|---|--|
+    |---|---|---|---|
     |Nick Rimando	|New York	|James Hoog	|0.15|
     |Brad Davis	    |New York	|James Hoog	|0.15|
     |Graham Zusi	    |California	|Nail Knite	|0.13|
@@ -120,7 +120,7 @@ ___
         ON a.salesman_id = c.salesman_id;
 
     |ord_no	|ord_date	|purch_amt	|Customer Name	|grade	|Salesman	|commission|
-    |---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|
     |70009	|2012-09-10	|270.65	    |Brad Guzan		|        |Pit Alex	|0.11|
     |70002	|2012-10-05	|65.26	    |Nick Rimando	|100	    |James Hoog	|0.15|
     |70004	|2012-08-17	|110.50	    |Geoff Cameron	|100	    |Lauson Hen	|0.12|
@@ -148,7 +148,7 @@ ___
         NATURAL JOIN salesman; 
 
     |salesman_id	|city	    |customer_id	|ord_no	|purch_amt	|ord_date	|cust_name	    |grade	|name	    |commission|
-    |---|---|---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|---|---|
     |5005	    |London	    |3001	    |70009	|270.65	    |2012-09-10	|Brad Guzan	    |	    |Pit Alex	|0.11|
     |5001	    |New York	|3002	    |70002	|65.26	    |2012-10-05	|Nick Rimando    |100	    |James Hoog	|0.15|
     |5001	    |New York	|3007	    |70005	|2400.60	    |2012-07-27	|Brad Davis	    |200	    |James Hoog	|0.15|
@@ -249,7 +249,7 @@ ___
         ON c.salesman_id = b.salesman_id;
 
     |cust_name	    |city		|ord_no	|ord_date	|Order Amount	|name		|commission|
-    |---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|
     |Brad Guzan	    |London		|70009	|2012-09-10	|270.65		    |Pit Alex	|0.11|
     |Nick Rimando	|New York	|70002	|2012-10-05	|65.26		    |James Hoog	|0.15|
     |Geoff Cameron	|Berlin		|70004	|2012-08-17	|110.50		    |Lauson Hen	|0.12|
@@ -305,7 +305,7 @@ ___
         ON c.customer_id = a.customer_id;
 
     |cust_name	    |city		|grade	|Salesman	|ord_no	|ord_date	|purch_amt|
-    |---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|
     |Brad Guzan	    |London		|	    |Pit Alex	|70009	|2012-09-10	|270.65|
     |Nick Rimando	|New York	|100	    |James Hoog	|70002	|2012-10-05	|65.26|
     |Geoff Cameron	|Berlin		|100	    |Lauson Hen	|70004	|2012-08-17	|110.50|
@@ -358,7 +358,7 @@ ___
         ON a.customer_id = b.customer_id;  
 
     |cust_name	    |city		|ord_no	|ord_date	|Order Amount|
-    |---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|
     |Brad Guzan	    |London		|70009	|2012-09-10	|270.65|
     |Nick Rimando	|New York	|70002	|2012-10-05	|65.26|
     |Geoff Cameron	|Berlin		|70004	|2012-08-17	|110.50|
@@ -387,7 +387,7 @@ ___
         WHERE a.grade IS NOT NULL;
 
     |cust_name	    |city		|ord_no	|ord_date	|Order Amount|
-    |---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|
     |Brad Guzan	    |London		|70009	|2012-09-10	|270.65|
     |Nick Rimando	|New York	|70002	|2012-10-05	|65.26|
     |Geoff Cameron	|Berlin		|70004	|2012-08-17	|110.50|
@@ -413,7 +413,7 @@ ___
         CROSS JOIN customer b;  
 
     |salesman_id	|name	    |city		|commission	|customer_id	|cust_name	    |city		|grade	|salesman_id|
-    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|---|---|
     |5001	    |James Hoog	|New York	|0.15		|3002		|Nick Rimando	|New York	|100	    |5001|
     |5002	    |Nail Knite	|Paris		|0.13		|3002		|Nick Rimando	|New York	|100	    |5001|
     |5005	    |Pit Alex	|London		|0.11		|3002		|Nick Rimando	|New York	|100	    |5001|
@@ -475,7 +475,7 @@ ___
         WHERE a.city IS NOT NULL;
 
     |salesman_id	|name	    |city		|commission	|customer_id	|cust_name	    |city		|grade	|salesman_id|
-    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|---|---|
     |5001	    |James Hoog	|New York	|0.15		|3002		|Nick Rimando	|New York	|100	    |5001|
     |5002	    |Nail Knite	|Paris		|0.13		|3002		|Nick Rimando	|New York	|100	    |5001|
     |5005	    |Pit Alex	|London		|0.11		|3002		|Nick Rimando	|New York	|100	    |5001|
@@ -538,7 +538,7 @@ ___
         AND b.grade IS NOT NULL;
 
     |salesman_id	|name		|city	    |commission	|customer_id	|cust_name	    |city		|grade	|salesman_id|
-     |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|---|---|
     |5001		|James Hoog	|New York	|0.15	    |3002		|Nick Rimando	|New York	|100	    |5001|
     |5002		|Nail Knite	|Paris		|0.13	    |3002		|Nick Rimando	|New York	|100	    |5001|
     |5005		|Pit Alex	|London		|0.11	    |3002		|Nick Rimando	|New York	|100	    |5001|
@@ -597,7 +597,7 @@ ___
         AND  a.city<>b.city;
 
     |salesman_id	|name		|city	|commission	|customer_id	|cust_name	    |city		|grade	|salesman_id|
-    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|---|---|
     |5002		|Nail Knite	|Paris	|0.13		|3002		|Nick Rimando	|New York	|100	    |5001|
     |5005		|Pit Alex	|London	|0.11		|3002		|Nick Rimando	|New York	|100	    |5001|
     |5006		|Mc Lyon		|Paris	|0.14		|3002		|Nick Rimando	|New York	|100	    |5001|
@@ -649,7 +649,7 @@ ___
         ON item_mast.pro_com= company_mast.com_id; 
 
     |pro_id	|pro_name		|pro_price	|pro_com	|com_id	|com_name|
-    |---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|
     |101	|Mother Board		|3200.00		|15	    |15	    |Asus|
     |102	|Key Board		    |450.00		|16	    |16	    |Frontech|
     |103	|ZIP drive		    |250.00		|14	    |14	    |Zebronics|
@@ -772,7 +772,7 @@ ___
               ON A.emp_dept = B.dpt_code;  
 
     |emp_idno	|First Name	|Last Name	|Department	|emp_dept	|dpt_code	dpt_allotment|
-    |---|---|---|---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|
     |631548		|Alan		|Snappy		|RD		    |27		    |27		    55000|
     |839139		|Maria		|Foster		|IT		    |57		    |57		    65000|
     |127323		|Michale		|Robbin		|IT		    |57		    |57		    65000|
@@ -801,7 +801,7 @@ ___
             ON emp_details.emp_dept = emp_department.dpt_code;
     
     |First Name	|Last Name	|Department	|Amount Allotted|
-    |---|---|---|---|---|---|
+    |---|---|---|---|
     |Alan		|Snappy		|RD		    |55000|
     |Maria		|Foster		|IT		    |65000|
     |Michale		|Robbin		|IT		    |65000|

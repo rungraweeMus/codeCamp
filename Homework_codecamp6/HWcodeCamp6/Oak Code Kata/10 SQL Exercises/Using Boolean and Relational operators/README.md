@@ -2,10 +2,11 @@
 ## Using Boolean and Relational operators
 ![Imgur](https://i.imgur.com/vFHJMM1.png)
 
- ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**    
- SELECT *   
- FROM customer   
- WHERE grade > 100;
+ ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+    SELECT *   
+    FROM customer   
+    WHERE grade > 100;
 
 |customer_id	|cust_name	  |  city	    |grade|	salesman_id|
 |---|---|---|---|---|
@@ -18,11 +19,12 @@
 ___
 ![Imgur](https://i.imgur.com/pcTsEJZ.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM customer   
-WHERE city = 'New York'   
-AND grade > 100;
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer** 
+
+    SELECT *   
+    FROM customer   
+    WHERE city = 'New York'   
+    AND grade > 100;
 
 |customer_id|	cust_name	|city		|grade		|salesman_id|
 |---|---|---|---|---|
@@ -31,11 +33,12 @@ AND grade > 100;
 ___
 ![Imgur](https://i.imgur.com/2gRZJNY.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**    
-SELECT *   
-FROM customer  
-WHERE city = 'New York'   
-OR grade > 100;  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer** 
+
+    SELECT *   
+    FROM customer  
+    WHERE city = 'New York'   
+    OR grade > 100;  
 
 |customer_id	|cust_name	    |city		|grade	|salesman_id|
 |---|---|---|---|---|
@@ -48,10 +51,11 @@ OR grade > 100;
 ___
 ![Imgur](https://i.imgur.com/LJPzvSp.png)
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM customer   
-WHERE city = 'New York'   
-OR NOT grade>100;  
+
+    SELECT *   
+    FROM customer   
+    WHERE city = 'New York'   
+    OR NOT grade>100;  
 
 |customer_id	|cust_name	    |city	|	grade  | salesman_id|
 |---|---|---|---|---|
@@ -62,9 +66,9 @@ ___
 ![Imgur](https://i.imgur.com/Qa2GPQa.png)
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
 
-SELECT *   
-FROM customer   
-WHERE NOT (city = 'New York' OR grade>100);  
+    SELECT *   
+    FROM customer   
+    WHERE NOT (city = 'New York' OR grade>100);  
 
 |customer_id|cust_name	 |   city	|grade	|salesman_id|
 |---|---|---|---|---|
@@ -73,10 +77,11 @@ ___
 ![Imgur](https://i.imgur.com/RMvw1e7.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM  orders   
-WHERE NOT ((ord_date ='2012-09-10'AND salesman_id > 5005)   
-OR purch_amt > 1000.00);
+
+    SELECT *   
+    FROM  orders   
+    WHERE NOT ((ord_date ='2012-09-10'AND salesman_id > 5005)   
+    OR purch_amt > 1000.00);
 
 ord_no|purch_amt|ord_date  |customer_id|salesman_id|
 ------|---------|----------|-----------|-----------|
@@ -91,9 +96,10 @@ ord_no|purch_amt|ord_date  |customer_id|salesman_id|
 ___
 ![Imgur](https://i.imgur.com/EyBXQSU.png)
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT salesman_id,name,city,commission   
-FROM salesman  
-WHERE (commission > 0.10 AND commission< 0.12);  
+
+    SELECT salesman_id,name,city,commission   
+    FROM salesman  
+    WHERE (commission > 0.10 AND commission< 0.12);  
 
 |salesman_id	|name	|city	|commission|
 |---|---|---|---|
@@ -103,11 +109,12 @@ ___
 ![Imgur](https://i.imgur.com/jsrtZZ1.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM  orders   
-WHERE(purch_amt<200   
-OR NOT(ord_date>='2012-02-10'  
-AND customer_id<3009));  
+
+    SELECT *   
+    FROM  orders   
+    WHERE(purch_amt<200   
+    OR NOT(ord_date>='2012-02-10'  
+    AND customer_id<3009));  
 
 |ord_no	|purch_amt	|ord_date	|customer_id	|salesman_id|
 |---|---|---|---|---|
@@ -121,11 +128,12 @@ ___
 ![Imgur](https://i.imgur.com/ZRgWCVl.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM  orders  
-WHERE NOT((ord_date ='2012-08-17'  
-OR customer_id>3005)   
-AND purch_amt<1000);
+
+    SELECT *   
+    FROM  orders  
+    WHERE NOT((ord_date ='2012-08-17'  
+    OR customer_id>3005)   
+    AND purch_amt<1000);
 
 |ord_no	|purch_amt	|ord_date	|customer_id|	salesman_id|
 |---|---|---|---|---|
@@ -142,12 +150,13 @@ AND purch_amt<1000);
 ___
 ![Imgur](https://i.imgur.com/VCnoCaQ.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT ord_no,purch_amt,   
-(100*purch_amt)/6000 AS "Achieved %",    
- (100*(6000-purch_amt)/6000) AS "Unachieved %"   
- FROM  orders   
- WHERE (100*purch_amt)/6000>50;  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+    SELECT ord_no,purch_amt,   
+    (100*purch_amt)/6000 AS "Achieved %",    
+    (100*(6000-purch_amt)/6000) AS "Unachieved %"   
+    FROM  orders   
+    WHERE (100*purch_amt)/6000>50;  
 
 |ord_no	|purch_amt	|Achieved %			|Unachieved %|
 |---|---|---|---|
@@ -158,10 +167,11 @@ ___
 ![Imgur](https://i.imgur.com/v8d994f.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *    
-FROM emp_details    
-WHERE emp_lname ='Dosni'   
-OR emp_lname= 'Mardy';  
+
+    SELECT *    
+    FROM emp_details    
+    WHERE emp_lname ='Dosni'   
+    OR emp_lname= 'Mardy';  
 
 |emp_idno	|emp_fname	|emp_lname	|emp_dept|
 |---|---|---|---|
@@ -172,10 +182,11 @@ ___
 ![Imgur](https://i.imgur.com/jPTfCYq.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *    
-FROM emp_details   
-WHERE emp_dept = 47   
-OR emp_dept = 63;  
+
+    SELECT *    
+    FROM emp_details   
+    WHERE emp_dept = 47   
+    OR emp_dept = 63;  
 
 |emp_idno	|emp_fname	|emp_lname	|emp_dept|
 |---|---|---|---|

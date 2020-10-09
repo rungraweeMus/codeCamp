@@ -49,7 +49,7 @@ AND orders.customer_id = customer.customer_id
 AND orders.salesman_id = salesman.salesman_id;  
 
 |ord_no	|cust_name	    |customer_id	|salesman_id|
-|---|---|---|---|---|
+|---|---|---|---|
 |70004	|Geoff Cameron	|3009		|5003|
 |70003	|Geoff Cameron	|3009		|5003|
 |70011	|Jozy Altidor	|3003		|5007|

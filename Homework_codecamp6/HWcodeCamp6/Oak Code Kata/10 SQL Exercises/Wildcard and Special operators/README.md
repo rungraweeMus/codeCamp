@@ -3,10 +3,11 @@
 ![Imgur](https://i.imgur.com/PsFgi5E.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM salesman  
-WHERE city = 'Paris'  
-OR city = 'Rome';  
+
+    SELECT *   
+    FROM salesman  
+    WHERE city = 'Paris'  
+    OR city = 'Rome';  
 
 |salesman_id|name		|city	|commission|
 |---|---|---|---|
@@ -17,9 +18,10 @@ ___
 ![Imgur](https://i.imgur.com/DmIrI6v.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM salesman   
-WHERE city IN ('Paris','Rome');  
+
+    SELECT *   
+    FROM salesman   
+    WHERE city IN ('Paris','Rome');  
 
 |salesman_id	|name		|city	|commission|
 |---|---|---|---|
@@ -30,10 +32,11 @@ ___
 ![Imgur](https://i.imgur.com/vEqNm0x.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *  
-FROM salesman   
-WHERE NOT city  
-IN ('Paris','Rome');  
+
+    SELECT *  
+    FROM salesman   
+    WHERE NOT city  
+    IN ('Paris','Rome');  
 
 |salesman_id|name	|city		|commission|
 |---|---|---|---|
@@ -44,10 +47,11 @@ ___
 ![Imgur](https://i.imgur.com/5zIoK4A.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM customer   
-WHERE customer_id   
-IN (3007,3008,3009);
+
+    SELECT *   
+    FROM customer   
+    WHERE customer_id   
+    IN (3007,3008,3009);
 
 |customer_id	|cust_name	|city		|grade	   |salesman_id|
 |---|---|---|---|---|
@@ -59,10 +63,11 @@ ___
 ![Imgur](https://i.imgur.com/0hFNJnw.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *  
-FROM salesman  
-WHERE commission   
-BETWEEN 0.12 AND 0.14;  
+
+    SELECT *  
+    FROM salesman  
+    WHERE commission   
+    BETWEEN 0.12 AND 0.14;  
 
 |salesman_id |    name    |   city   | commission |
 |---|---|---|---|
@@ -74,10 +79,11 @@ ___
 ![Imgur](https://i.imgur.com/q7bkdve.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM orders   
-WHERE (purch_amt BETWEEN 500 AND 4000)  
-AND NOT purch_amt IN (948.50,1983.43);  
+
+    SELECT *   
+    FROM orders   
+    WHERE (purch_amt BETWEEN 500 AND 4000)  
+    AND NOT purch_amt IN (948.50,1983.43);  
 
 |ord_no	|purch_amt	|ord_date	|customer_id|salesman_id|
 |---|---|---|---|---|
@@ -88,10 +94,11 @@ AND NOT purch_amt IN (948.50,1983.43);
 ___
 ![Imgur](https://i.imgur.com/yV4jLAC.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM salesman   
-WHERE name BETWEEN 'A' and 'K';  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer** 
+
+    SELECT *   
+    FROM salesman   
+    WHERE name BETWEEN 'A' and 'K';  
 
 |salesman_id	|name	    |city	    |commission|
 |---|---|---|---|
@@ -100,10 +107,11 @@ ___
 ![Imgur](https://i.imgur.com/piZtsAH.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**    
-SELECT *   
-FROM salesman   
-WHERE name NOT  
-BETWEEN 'A' and 'L';  
+
+    SELECT *   
+    FROM salesman   
+    WHERE name NOT  
+    BETWEEN 'A' and 'L';  
 
 | salesman_id |    name    |   city   | commission |
 |---|---|---|---|
@@ -115,10 +123,11 @@ BETWEEN 'A' and 'L';
 ___
 ![Imgur](https://i.imgur.com/cr6jQNb.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *  
-FROM customer   
-WHERE cust_name LIKE 'B%';  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**
+
+    SELECT *  
+    FROM customer   
+    WHERE cust_name LIKE 'B%';  
 
 |customer_id	|cust_name	|city		|grade	|salesman_id|
 |---|---|---|---|---|
@@ -128,9 +137,10 @@ ___
 ![Imgur](https://i.imgur.com/yAeiZch.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM customer   
-WHERE cust_name LIKE '%n';  
+
+    SELECT *   
+    FROM customer   
+    WHERE cust_name LIKE '%n';      
 
 |customer_id|cust_name		  |  city	|grade	|salesman_id|
 |---|---|---|---|---|
@@ -141,10 +151,11 @@ WHERE cust_name LIKE '%n';
 ___
 ![Imgur](https://i.imgur.com/R5O5rFp.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM salesman   
-WHERE name LIKE 'N__l%';  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**
+
+    SELECT *   
+    FROM salesman   
+    WHERE name LIKE 'N__l%';  
 
 |salesman_id	|name		|city	|commission|
 |---|---|---|---|
@@ -153,10 +164,11 @@ ___
 ![Imgur](https://i.imgur.com/hmf4lkt.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM testtable   
-WHERE col1 LIKE '%/_%'   
-ESCAPE '/';  
+
+    SELECT *   
+    FROM testtable   
+    WHERE col1 LIKE '%/_%'   
+    ESCAPE '/';  
 
 |col1|
 |---|
@@ -182,11 +194,12 @@ ___
 ![Imgur](https://i.imgur.com/nH5UyZF.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *  
-FROM testtable   
-WHERE col1   
-NOT LIKE '%/_%'  
-ESCAPE '/';  
+
+    SELECT *  
+    FROM testtable   
+    WHERE col1   
+    NOT LIKE '%/_%'  
+    ESCAPE '/';  
 
 |col1|
 |---|
@@ -198,11 +211,12 @@ ___
 ![Imgur](https://i.imgur.com/eDo5Cbf.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM testtable  
-WHERE col1   
-LIKE '%//%'   
-ESCAPE '/';  
+
+    SELECT *   
+    FROM testtable  
+    WHERE col1   
+    LIKE '%//%'   
+    ESCAPE '/';  
 
 |col1|
 |---|
@@ -219,11 +233,12 @@ ___
 ![Imgur](https://i.imgur.com/vmb0GpI.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM testtable  
-WHERE col1   
-NOT LIKE '%//%'   
-ESCAPE '/';  
+
+    SELECT *   
+    FROM testtable  
+    WHERE col1   
+    NOT LIKE '%//%'   
+    ESCAPE '/';  
 
 |col1|
 |---|
@@ -232,12 +247,13 @@ ESCAPE '/';
 ___
 ![Imgur](https://i.imgur.com/oHHfDQi.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-SELECT *   
-FROM testtable   
-WHERE col1   
-LIKE '%/_//%'   
-ESCAPE '/';  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**
+
+    SELECT *   
+    FROM testtable   
+    WHERE col1   
+    LIKE '%/_//%'   
+    ESCAPE '/';  
 
 |col1|
 |---|
@@ -247,11 +263,12 @@ ___
 ![Imgur](https://i.imgur.com/ry1C4E0.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *  
-FROM testtable   
-WHERE col1   
-NOT LIKE '%/_//%'   
-ESCAPE '/';  
+
+    SELECT *  
+    FROM testtable   
+    WHERE col1   
+    NOT LIKE '%/_//%'   
+    ESCAPE '/';  
 
 |col1|
 |---|
@@ -267,11 +284,12 @@ ESCAPE '/';
 ___
 ![Imgur](https://i.imgur.com/6EPGpY2.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM testtable   
-WHERE col1   
-LIKE '%/%%' ESCAPE'/';  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer** 
+
+    SELECT *   
+    FROM testtable   
+    WHERE col1   
+    LIKE '%/%%' ESCAPE'/';  
 
 |col1|
 |---|
@@ -282,11 +300,12 @@ ___
 ![Imgur](https://i.imgur.com/PnUxpBq.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM testtable   
-WHERE col1   
-NOT LIKE '%/%%'  
-ESCAPE'/';  
+
+    SELECT *   
+    FROM testtable   
+    WHERE col1   
+    NOT LIKE '%/%%'  
+    ESCAPE'/';  
 
 |col1|
 |---|
@@ -301,10 +320,11 @@ ESCAPE'/';
 ___
 ![Imgur](https://i.imgur.com/zhlkTeI.png)
 
-![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM customer   
-WHERE grade IS NULL;  
+![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+    SELECT *   
+    FROM customer   
+    WHERE grade IS NULL;  
 
 |customer_id|cust_name	|city	|grade|	salesman_id|
 |---|---|---|---|---|
@@ -313,9 +333,10 @@ ___
 ![Imgur](https://i.imgur.com/6xYvbnk.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM customer   
-WHERE NOT grade IS NULL;  
+
+    SELECT *   
+    FROM customer   
+    WHERE NOT grade IS NULL;  
 
 | customer_id |   cust_name    |    city    | grade | salesman_id|
 |------|--------|-----|----|----|
@@ -331,10 +352,11 @@ ___
 ![Imgur](https://i.imgur.com/HBLxDC5.png)
 
 ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-SELECT *   
-FROM emp_details   
-WHERE emp_lname   
-LIKE 'D%';  
+
+    SELECT *   
+    FROM emp_details   
+    WHERE emp_lname   
+    LIKE 'D%';  
 
 |emp_idno|	emp_fname|emp_lname	|emp_dept|
 |---|---|---|---|

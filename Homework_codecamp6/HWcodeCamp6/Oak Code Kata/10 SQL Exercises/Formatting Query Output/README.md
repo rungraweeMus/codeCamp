@@ -25,7 +25,7 @@ FROM orders
 GROUP BY ord_date;  
 
 |?column?	|ord_date	|?column?	|count	|?column?|
-|---|---|---|---|---|----|
+|---|---|---|---|---|
 |For		    |2012-04-25	|,there are	|1	    |orders.|
 |For		    |2012-06-27	|,there are	|1	    |orders.|
 |For		    |2012-07-27	|,there are	|1	    |orders.|

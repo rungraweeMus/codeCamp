@@ -42,15 +42,15 @@ ___
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**
 
-    SELECT *
-    FROM orders
-    WHERE salesman_id =
-        (SELECT DISTINCT salesman_id 
-        FROM orders 
-        WHERE customer_id =3007);
+        SELECT *
+        FROM orders
+        WHERE salesman_id =
+            (SELECT DISTINCT salesman_id 
+            FROM orders 
+            WHERE customer_id =3007);
     
     |ord_no	|purch_amt	|ord_date	|customer_id	|salesman_id|
-    |---|---|---|---|---|---|---|
+    |---|---|---|---|---|
     |70002	|65.26		|2012-10-05	|3002		|5001|
     |70005	|2400.60		|2012-07-27	|3007		|5001|
     |70008	|5760.00		|2012-09-10	|3002		|5001|
@@ -71,7 +71,7 @@ ___
             WHERE ord_date ='10/10/2012');
     
     |ord_no	|purch_amt	|ord_date	|customer_id	|salesman_id|
-    |---|---|---|---|---|---|
+    |---|---|---|---|---|
     |70005	|2400.60		|2012-07-27	|3007		|5001|
     |70008	|5760.00		|2012-09-10	|3002		|5001|
     |70003	|2480.40		|2012-10-10	|3009		|5003|
@@ -133,7 +133,7 @@ ___
             WHERE name = 'Mc Lyon');
    
     |customer_id	|cust_name	|city		|grade	|salesman_id|
-    |---|---|---|---|---|---|---|
+    |---|---|---|---|---|
     |3005		|Graham Zusi	|California	|200		|5002|
 
 ___

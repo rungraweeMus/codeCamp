@@ -2,16 +2,29 @@
 ## Retrieve data from tables
 1. Write a SQL statement to display all the information of all salesmen.   
 
-    Sample table: salesman
+    **Sample table: salesman**
+
     ![Imgur](https://i.imgur.com/5OWQ9MY.png)
- ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
- SELECT * FROM salesman;
+
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+ 
+        SELECT * FROM salesman;
+    
+    |salesman_id	|name		|city		|commission|
+    |---|---|---|---|
+    |5001		|James Hoog	|New York	|0.15|
+    |5002		|Nail Knite	|Paris		|0.13|
+    |5005		|Pit Alex	|London		|0.11|
+    |5006		|Mc Lyon		|Paris		|0.14|
+    |5007		|Paul Adam	|Rome		|0.13|
+    |5003		|Lauson Hen	|San Jose	|0.12|
 
  ___
 2. Write a SQL statement to display a string "This is SQL Exercise, Practice and Solution".
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-  SELECT "This is SQL Exercise, Practice and Solution";  
+
+        SELECT "This is SQL Exercise, Practice and Solution";  
 
     |?column?|  
     |-----------|  
@@ -20,7 +33,9 @@ ___
 3. Write a query to display three numbers in three columns.  
    
    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-   SELECT 8, 14, 15;
+
+        SELECT 8, 14, 15;
+
     |?column?|  
     |-----------|  
     |15|
@@ -28,7 +43,9 @@ ___
 4. Write a query to display the sum of two numbers 10 and 15 from RDMS sever. 
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-    SELECT 10 + 15;
+
+        SELECT 10 + 15;
+
     |?column?|  
     |-----------|  
     |25|
@@ -36,7 +53,8 @@ ___
 5. Write a query to display the result of an arithmetic expression.  
    
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-    SELECT 12 + 15 * 2 - 7;
+
+        SELECT 12 + 15 * 2 - 7;
 
     |?column?|  
     |-----------|  
@@ -44,11 +62,14 @@ ___
 ___
 6. Write a SQL statement to display specific columns like name and commission for all the salesmen. 
 
-    Sample table: salesman
-        ![Imgur](https://i.imgur.com/5OWQ9MY.png)
+    **Sample table: salesman**
+
+    ![Imgur](https://i.imgur.com/5OWQ9MY.png)
+
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT name, commission
-FROM salesman; 
+
+        SELECT name, commission
+        FROM salesman; 
 
     |name|	commission|
     |---|---|
@@ -61,12 +82,14 @@ FROM salesman;
 ___
 7. Write a query to display the columns in a specific order like order date, salesman id, order number and purchase amount from for all the orders. 
    
-   Sample table : orders
-![Imgur](https://i.imgur.com/mzhsP3B.png)
+   **Sample table : orders**
+
+    ![Imgur](https://i.imgur.com/mzhsP3B.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
         SELECT ord_date, salesman_id, ord_no, purch_amt  
-FROM orders;   
+        FROM orders;   
 
     |ord_date|	salesman_id|	ord_no|	purch_amt|
     |---|---|---|---|
@@ -85,29 +108,34 @@ FROM orders;
 ___
 8. Write a query which will retrieve the value of salesman id of all salesmen, getting orders from the customers in orders table without any repeats.    
    
-    Sample table : orders
-![Imgur](https://i.imgur.com/mzhsP3B.png)
+    **Sample table : orders**
+
+    ![Imgur](https://i.imgur.com/mzhsP3B.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
         SELECT DISTINCT salesman_id  
-FROM orders; 
+        FROM orders; 
 
     |salesman_id|
     |---|
-   |5006|
-   |5002|
-   |5003|
-   |5001|
-   |5005|
-   |5007|
+    |5006|
+    |5002|
+    |5003|
+    |5001|
+    |5005|
+    |5007|
 ___
 9. Write a SQL statement to display names and city of salesman, who belongs to the city of Paris.  
     
-    Sample table: salesman
+    **Sample table: salesman**
+
     ![Imgur](https://i.imgur.com/5OWQ9MY.png)
- ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
- SELECT name,city FROM salesman   
- WHERE city='Paris';
+
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+        SELECT name,city FROM salesman   
+        WHERE city='Paris';
 
     |name	|city|
     |---|---|
@@ -116,12 +144,15 @@ ___
 ___
 10. Write a SQL statement to display all the information for those customers with a grade of 200.   
     
-    Sample table: customer
+    **Sample table: customer**
+
     ![Imgur](https://i.imgur.com/mOglYfz.png)
+
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)
     **Answer**  
-    SELECT *FROM customer  
-    WHERE grade=200;
+    
+        SELECT *FROM customer  
+        WHERE grade = 200;
 
     |customer_id	|cust_name	   | city	    |grade	|salesman_id|
     |----|---|---|---|---|
@@ -131,13 +162,15 @@ ___
 ___
 11. Write a SQL query to display the order number followed by order date and the purchase amount for each order which will be delivered by the salesman who is holding the ID 5001.  
     
-     Sample table : orders
+     **Sample table : orders**
+
     ![Imgur](https://i.imgur.com/mzhsP3B.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT ord_no, ord_date, purch_amt   
-    FROM orders   
-    WHERE salesman_id=5001;
+
+        SELECT ord_no, ord_date, purch_amt   
+        FROM orders   
+        WHERE salesman_id=5001;
 
     |ord_no|	ord_date	|purch_amt|
     |---|---|---|
@@ -148,13 +181,15 @@ ___
 ___
 12. Write a SQL query to display the Nobel prizes for 1970.     
 
-    Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT year,subject,winner   
-    FROM nobel_win   
-    WHERE year=1970; 
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+        SELECT year,subject,winner   
+        FROM nobel_win   
+        WHERE year=1970; 
 
     |year	|subject	    |winner|
     |---|---|---|
@@ -177,14 +212,16 @@ ___
 ___
 13. Write a SQL query to know the winner of the 1971 prize for Literature. 
     
-     Sample table: nobel_win
+     **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
      ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**    
-     SELECT DISTINCT winner  
-    FROM nobel_win  
-    WHERE year = 1971  
-    AND subject = 'Literature';
+
+        SELECT DISTINCT winner  
+        FROM nobel_win  
+        WHERE year = 1971  
+        AND subject = 'Literature';
 
     |winner|
     |---|
@@ -192,13 +229,14 @@ ___
 ___
 14. Write a SQL query to display the year and subject that won 'Dennis Gabor' his prize. 
 
-    Sample table: nobel_win
+    **Sample table: nobel_win**
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**     
-     SELECT DISTINCT year, subject  
-  FROM nobel_win  
- WHERE winner = 'Dennis Gabor';
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**
+
+        SELECT DISTINCT year, subject  
+        FROM nobel_win  
+        WHERE winner = 'Dennis Gabor';
 
     |year|	subject|
     |---|--|
@@ -206,14 +244,15 @@ ___
 ___
 15. Write a SQL query to give the name of the 'Physics' winners since the year 1950.  
     
-     Sample table: nobel_win
+    **Sample table: nobel_win**
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**    
-     SELECT DISTINCT winner   
-     FROM nobel_win   
-     WHERE year>=1950   
-     AND subject='Physics';
+     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+        SELECT DISTINCT winner   
+        FROM nobel_win   
+        WHERE year>=1950   
+        AND subject='Physics';
 
     |winner|
     |---|
@@ -224,15 +263,16 @@ ___
 ___
 16. Write a SQL query to Show all the details (year, subject, winner, country ) of the Chemistry prize winners between the year 1965 to 1975 inclusive.  
     
-     Sample table: nobel_win
+    **Sample table: nobel_win**
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**     
-     SELECT DISTINCT year, subject, winner,   country   
-     FROM nobel_win       
-     WHERE subject = 'Chemistry'   
-     AND year>=1965   
-     AND year<=1975;  
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**     
+
+        SELECT DISTINCT year, subject, winner,   country   
+        FROM nobel_win       
+        WHERE subject = 'Chemistry'   
+        AND year>=1965   
+        AND year<=1975;  
 
     |year|	subject	  |  winner	                |country|
     |---|---|---|---|
@@ -241,16 +281,17 @@ ___
 ___
 17. Write a SQL query to show all details of the Prime Ministerial winners after 1972 of Menachem Begin and Yitzhak Rabin.
     
-     Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
 
-     SELECT DISTINCT *   
-     FROM nobel_win   
-     WHERE year >1972   
-     AND winner   
-     IN ('Menachem Begin','Yitzhak Rabin'); 
+        SELECT DISTINCT *   
+        FROM nobel_win   
+        WHERE year >1972   
+        AND winner   
+        IN ('Menachem Begin','Yitzhak Rabin'); 
 
     |year	|subject	|winner	    |country	|category|
     |---|---|---|---|---|
@@ -259,15 +300,16 @@ ___
 ___
 18. Write a SQL query to show all the details of the winners with first name Louis.
     
-    Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
 
-     SELECT DISTINCT *   
-    FROM nobel_win  
-    WHERE winner   
-    LIKE 'Louis%';
+        SELECT DISTINCT *   
+        FROM nobel_win  
+        WHERE winner   
+        LIKE 'Louis%';
 
     |year|	subject|	winner	   | country|	category|
     |---|---|----|---|---|
@@ -275,32 +317,36 @@ ___
 ___
 19. Write a SQL query to show all the winners in Physics for 1970 together with the winner of Economics for 1971.
     
-    Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-     SELECT *     
-     FROM nobel_win      
-     WHERE (subject ='Physics' AND year=1970)     
-     UNION (SELECT * FROM nobel_win  WHERE (subject ='Economics' AND year=1971)); 
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
 
-    |year|	subject|    winner	        country|	category|
-    |---|---|---|---|
-    |1970|	Physics|    Hannes Alfven	Sweden	|Scientist|
-    |1970|	Physics|    Louis Neel	    France	|Scientist|
-    |1971|	Economics|	Simon Kuznets	Russia	|Economist|
+        SELECT *     
+        FROM nobel_win      
+        WHERE (subject ='Physics' AND year=1970)     
+        UNION (SELECT * FROM nobel_win  WHERE (subject ='Economics' AND year=1971)); 
+
+    |year|	subject|    winner	        |country|	category|
+    |---|---|---|---|---|
+    |1970|	Physics|    Hannes Alfven	|Sweden	|Scientist|
+    |1970|	Physics|    Louis Neel	    |France	|Scientist|
+    |1971|	Economics|	Simon Kuznets	|Russia	|Economist|
 ___
 20. Write a SQL query to show all the winners of nobel prize in the year 1970 except the subject Physiology and Economics. 
 
-     Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT DISTINCT *  
-    FROM nobel_win   
-    WHERE year=1970  
-    AND subject 
-    NOT IN('Physiology','Economics');
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+        SELECT DISTINCT *  
+        FROM nobel_win   
+        WHERE year=1970  
+        AND subject 
+        NOT IN('Physiology','Economics');
 
     |year|	subject	  |  winner	               | country	|category|
     |---|---|---|---|---|
@@ -311,17 +357,19 @@ ___
 ___
 21. Write a SQL query to show the winners of a 'Physiology' prize in an early year before 1971 together with winners of a 'Peace' prize in a later year on and after the 1974.  
     
-     Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-     SELECT *   
-     FROM nobel_win   
-     WHERE (subject ='Physiology' AND year<1971)   
-     UNION (SELECT * FROM nobel_win WHERE (subject ='Peace' AND year>=1974));
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
 
-    |year	|subject	|winner	        |country|	        category|
-    |---|---|---|---|---|---|---|
+        SELECT *   
+        FROM nobel_win   
+        WHERE (subject ='Physiology' AND year<1971)   
+        UNION (SELECT * FROM nobel_win WHERE (subject ='Peace' AND year>=1974));
+
+    |year	|subject	|winner	 |country|category|
+    |---|---|---|---|---|
     |1970	|Physiology	|Bernard Katz	|Germany|	        Scientist|
     |1970	|Physiology	|Julius Axelrod	|USA	|            Scientist|
     |1970	|Physiology	|Ulf von Euler	|Sweden |     	    Scientist|
@@ -331,13 +379,15 @@ ___
 ___
 22. Write a SQL query to find all details of the prize won by Johannes Georg Bednorz. 
 
-    Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-     SELECT DISTINCT *   
-     FROM nobel_win   
-     WHERE winner='Johannes Georg Bednorz';
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+        SELECT DISTINCT *   
+        FROM nobel_win   
+        WHERE winner='Johannes Georg Bednorz';
 
     |year	|subject	|winner	                |country	|category|
     |---|---|---|---|---|
@@ -345,15 +395,17 @@ ___
 ___
 23. Write a SQL query to find all the details of the nobel winners for the subject not started with the letter 'P' and arranged the list as the most recent comes first, then by name in order.   
     
-    Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-     SELECT DISTINCT *   
-     FROM nobel_win   
-     WHERE subject   
-     NOT LIKE 'P%'   
-     ORDER BY year DESC, winner;
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**
+
+        SELECT DISTINCT *   
+        FROM nobel_win   
+        WHERE subject   
+        NOT LIKE 'P%'   
+        ORDER BY year DESC, winner;
 
     |year	|subject	    |winner	                |country	|category|
     |---|---|---|---|---|
@@ -372,16 +424,18 @@ ___
 ___
 24. Write a SQL query to find all the details of 1970 winners by the ordered to subject and winner name; but the list contain the subject Economics and Chemistry at last.
     
-    Sample table: nobel_win
+    **Sample table: nobel_win**
+
     ![Imgur](https://i.imgur.com/GXEBvP3.png)
 
-     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-     SELECT *   
-     FROM nobel_win 
-     WHERE year=1970   
-     ORDER BY    
-     CASE WHEN subject IN ('Economics','Chemistry')    
-     THEN 1 ELSE 0 END ASC, subject, winner;
+    [Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+    
+        SELECT *   
+        FROM nobel_win 
+        WHERE year=1970   
+        ORDER BY    
+        CASE WHEN subject IN ('Economics','Chemistry')    
+        THEN 1 ELSE 0 END ASC, subject, winner;
 
     |year	|subject		|winner				        |country	|category|
     |---|---|---|---|---|
@@ -396,14 +450,16 @@ ___
 ___
 25. Write a SQL query to find all the products with a price between Rs.200 and Rs.600. 
     
-    Sample table: item_mast
+    **Sample table: item_mast**
+
     ![Imgur](https://i.imgur.com/l0cpNGc.png)
 
-    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**   
-    SELECT *   
-    FROM item_mast   
-    WHERE pro_price   
-    BETWEEN 200 AND 600;
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer** 
+
+        SELECT *   
+        FROM item_mast   
+        WHERE pro_price   
+        BETWEEN 200 AND 600;
 
     |pro_id	    |pro_name	        |pro_price	|pro_com|
     |---|---|---|---|
@@ -415,13 +471,15 @@ ___
 ___
 26. Write a SQL query to calculate the average price of all products of the manufacturer which code is 16. 
     
-     Sample table: item_mast
+    **Sample table: item_mast**
+
     ![Imgur](https://i.imgur.com/l0cpNGc.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**     
-    SELECT AVG(pro_price)   
-    FROM item_mast  
-    WHERE pro_com=16;
+
+        SELECT AVG(pro_price)   
+        FROM item_mast  
+        WHERE pro_com=16;
 
     |avg|
     |---|
@@ -429,12 +487,15 @@ ___
 ___
 27. Write a SQL query to find the item name and price in Rs.    
     
-    Sample table: item_mast
+    **Sample table: item_mast**
+
     ![Imgur](https://i.imgur.com/l0cpNGc.png)
 
-    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**     
-    SELECT pro_name AS "Item Name", pro_price AS "Price in Rs."   
-    FROM item_mast;
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
+
+        SELECT pro_name AS "Item Name", 
+        pro_price AS "Price in Rs."   
+        FROM item_mast;
 
     |Item Name	        |Price in Rs.|
     |---|---|
@@ -451,14 +512,16 @@ ___
 ___
 28. Write a SQL query to display the name and price of all the items with a price is equal or more than Rs.250, and the list contain the larger price first and then by name in ascending order.    
     
-    Sample table: item_mast
+    **Sample table: item_mast**
+
     ![Imgur](https://i.imgur.com/l0cpNGc.png)
 
-    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**     
-    SELECT pro_name, pro_price   
-    FROM item_mast   
-    WHERE pro_price >= 250   
-    ORDER BY pro_price DESC, pro_name;
+    ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**    
+
+        SELECT pro_name, pro_price   
+        FROM item_mast   
+        WHERE pro_price >= 250   
+        ORDER BY pro_price DESC, pro_name;
 
     |pro_name	   |pro_price|
     |---|---|
@@ -475,14 +538,15 @@ ___
 ___
 29. Write a SQL query to display the average price of the items for each company, showing only the company code. 
      
-    Sample table: item_mast
+    **Sample table: item_mast**
+
     ![Imgur](https://i.imgur.com/l0cpNGc.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
 
-    SELECT AVG(pro_price), pro_com   
-    FROM item_mast   
-    GROUP BY pro_com;
+        SELECT AVG(pro_price), pro_com   
+        FROM item_mast   
+        GROUP BY pro_com;
 
     |avg	                    |pro_com|
     |---|---|
@@ -495,14 +559,17 @@ ___
 ___
 30. Write a SQL query to find the name and price of the cheapest item(s).    
     
-    Sample table: item_mast
+    **Sample table: item_mast**
+
     ![Imgur](https://i.imgur.com/l0cpNGc.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
 
-    SELECT pro_name, pro_price  
-   FROM item_mast  
-   WHERE pro_price = (SELECT MIN(pro_price) FROM item_mast);
+        SELECT pro_name, pro_price  
+        FROM item_mast  
+        WHERE pro_price = 
+            (SELECT MIN(pro_price) 
+            FROM item_mast);
 
     |pro_name	|pro_price|
     |--|---|
@@ -511,12 +578,14 @@ ___
 ___
 31. Write a query in SQL to find the last name of all employees, without duplicates.   
     
-    Sample table: emp_details
+    **Sample table: emp_details**
+
     ![Imgur](https://i.imgur.com/nw1H6fP.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT DISTINCT emp_lname  
-    FROM emp_details;
+
+        SELECT DISTINCT emp_lname  
+        FROM emp_details;
 
     |emp_lname|
     |---|
@@ -535,13 +604,15 @@ ___
 ___
 32. Write a query in SQL to find the data of employees whose last name is 'Snares'.  
     
-    Sample table: emp_details
+    **Sample table: emp_details**
+
     ![Imgur](https://i.imgur.com/nw1H6fP.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT *   
-    FROM emp_details  
-    WHERE emp_lname= 'Snares';
+
+        SELECT *   
+        FROM emp_details  
+        WHERE emp_lname= 'Snares';
 
     |emp_idno	|emp_fname	|emp_lname	|emp_dept|
     |---|---|---|---|
@@ -550,13 +621,15 @@ ___
 ___
 33. Write a query in SQL to display all the data of employees that work in the department 57. 
      
-    Sample table: emp_details
+    **Sample table: emp_details**
+
     ![Imgur](https://i.imgur.com/nw1H6fP.png)
 
     ![Logo](https://cdn1.iconfinder.com/data/icons/customicondesign-mini-deepcolour-png/16/File_edit.png)**Answer**  
-    SELECT *   
-    FROM emp_details   
-    WHERE emp_dept= 57;
+
+        SELECT *   
+        FROM emp_details   
+        WHERE emp_dept= 57;
 
     |emp_idno	|emp_fname	|emp_lname	|emp_dept|
     |---|---|---|---|
@@ -565,4 +638,5 @@ ___
     |843795	    |Enric	    |Dosio	    |57|
     |847674	    |Kuleswar	|Sitaraman	|57|
     |555935	    |Alex	    |Manuel	    |57|
+    
 ___
