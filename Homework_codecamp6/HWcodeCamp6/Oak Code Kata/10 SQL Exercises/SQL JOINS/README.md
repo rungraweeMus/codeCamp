@@ -148,7 +148,7 @@ ___
         NATURAL JOIN salesman; 
 
     |salesman_id	|city	    |customer_id	|ord_no	|purch_amt	|ord_date	|cust_name	    |grade	|name	    |commission|
-    |---|---|---|---|---|---|---|---|---|
+    |---|---|---|---|---|---|---|---|---|---|
     |5005	    |London	    |3001	    |70009	|270.65	    |2012-09-10	|Brad Guzan	    |	    |Pit Alex	|0.11|
     |5001	    |New York	|3002	    |70002	|65.26	    |2012-10-05	|Nick Rimando    |100	    |James Hoog	|0.15|
     |5001	    |New York	|3007	    |70005	|2400.60	    |2012-07-27	|Brad Davis	    |200	    |James Hoog	|0.15|
@@ -358,7 +358,7 @@ ___
         ON a.customer_id = b.customer_id;  
 
     |cust_name	    |city		|ord_no	|ord_date	|Order Amount|
-    |---|---|---|---|---|---|
+    |---|---|---|---|---|
     |Brad Guzan	    |London		|70009	|2012-09-10	|270.65|
     |Nick Rimando	|New York	|70002	|2012-10-05	|65.26|
     |Geoff Cameron	|Berlin		|70004	|2012-08-17	|110.50|
@@ -387,7 +387,7 @@ ___
         WHERE a.grade IS NOT NULL;
 
     |cust_name	    |city		|ord_no	|ord_date	|Order Amount|
-    |---|---|---|---|---|---|
+    |---|---|---|---|---|
     |Brad Guzan	    |London		|70009	|2012-09-10	|270.65|
     |Nick Rimando	|New York	|70002	|2012-10-05	|65.26|
     |Geoff Cameron	|Berlin		|70004	|2012-08-17	|110.50|
@@ -771,21 +771,21 @@ ___
         INNER JOIN emp_department B  
               ON A.emp_dept = B.dpt_code;  
 
-    |emp_idno	|First Name	|Last Name	|Department	|emp_dept	|dpt_code	dpt_allotment|
+    |emp_idno	|First Name	|Last Name	|Department	|emp_dept	|dpt_code	|dpt_allotment|
     |---|---|---|---|---|---|---|
-    |631548		|Alan		|Snappy		|RD		    |27		    |27		    55000|
-    |839139		|Maria		|Foster		|IT		    |57		    |57		    65000|
-    |127323		|Michale		|Robbin		|IT		    |57		    |57		    65000|
-    |526689		|Carlos		|Snares		|Finance	    |63		    |63		    15000|
-    |843795		|Enric		|Dosio		|IT		    |57		    |57		    65000|
-    |328717		|Jhon		|Snares		|Finance	    |63		    |63		    15000|
-    |444527		|Joseph		|Dosni		|HR		    |47		    |47		    240000|
-    |659831		|Zanifer		|Emily		|HR		    |47		    |47		    240000|
-    |847674		|Kuleswar	|Sitaraman	|IT		    |57		    |57		    65000|
-    |748681		|Henrey		|Gabriel		|HR		    |47		    |47		    240000|
-    |555935		|Alex		|Manuel		|IT		    |57		    |57		    65000|
-    |539569		|George		|Mardy		|RD		    |27		    |27		    55000|
-    |733843		|Mario		|Saule		|Finance		|63		    |63		    15000|
+    |631548		|Alan		|Snappy		|RD		    |27		    |27		    |55000|
+    |839139		|Maria		|Foster		|IT		    |57		    |57		    |65000|
+    |127323		|Michale		|Robbin		|IT		    |57		    |57		|    65000|
+    |526689		|Carlos		|Snares		|Finance	    |63		    |63		|    15000|
+    |843795		|Enric		|Dosio		|IT		    |57		    |57		    |65000|
+    |328717		|Jhon		|Snares		|Finance	    |63		    |63		|    15000|
+    |444527		|Joseph		|Dosni		|HR		    |47		    |47		    |240000|
+    |659831		|Zanifer		|Emily		|HR		    |47		    |47		|    240000|
+    |847674		|Kuleswar	|Sitaraman	|IT		    |57		    |57		    |65000|
+    |748681		|Henrey		|Gabriel		|HR		    |47		    |47		|    240000|
+    |555935		|Alex		|Manuel		|IT		    |57		    |57		    |65000|
+    |539569		|George		|Mardy		|RD		    |27		    |27		    |55000|
+    |733843		|Mario		|Saule		|Finance		|63		    |63		|    15000|
 ___
 27. Write a query in SQL to display the first name and last name of each employee, along with the name and sanction amount for their department.  
 
